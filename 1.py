@@ -1,16 +1,11 @@
-# YUKIESTREETBOT
-# KHIE WAS HERE
-from Lineoat.linepy import *
-from Lineoat.akad.ttypes import Message
-from Lineoat.akad.ttypes import ContentType as Type
-from Lineoat.akad.ttypes import ChatRoomAnnouncementContents
-from Lineoat.akad.ttypes import ChatRoomAnnouncement
-from datetime import datetime, timedelta
+from Linephu.linepy import *
+from akad.ttypes import *
+from multiprocessing import Pool, Process
+from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
 from humanfriendly import format_timespan, format_size, format_number, format_length
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse, ffmpy, wikipedia, atexit, datetime, pafy, youtube_dl
-_session = requests.session()
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
 from gtts import gTTS
 from googletrans import Translator
 #==============================================================================================================
