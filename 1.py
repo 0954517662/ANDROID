@@ -33,9 +33,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "ue4117356009586eb55366d1199e56589"
-owner = "ue4117356009586eb55366d1199e56589"
-Bots=[mid,"ue4117356009586eb55366d1199e56589"]
+admin = "u4862fe4b182b2fd194a3108e2f3662e8"
+owner = "u4862fe4b182b2fd194a3108e2f3662e8"
+Bots=[mid,"u4862fe4b182b2fd194a3108e2f3662e8"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
@@ -82,7 +82,7 @@ settings = json.load(settingsOpen)
 images = json.load(imagesOpen)
 stickers = json.load(stickersOpen)
 msg_dict = {}
-bl = ["ue4117356009586eb55366d1199e56589"]
+bl = ["u4862fe4b182b2fd194a3108e2f3662e8"]
 
 try:
     with open("Log_data.json","r",encoding="utf_8_sig") as f:
@@ -208,8 +208,9 @@ def command(text):
         cmd = "Undefined command"
     return cmd
 #==============================================================================================================
-helpmsg ="""
-╠═════════════════════
+helpmsg ="""╔════════════════
+╠【さัএπัஞ✵ບิथℓℓҨतΩ】
+╠════════════════
 ╠Me
 ╠.คท
 ╠ไอดีเรา
@@ -283,7 +284,7 @@ helpmsg ="""
 ╠แจก「จำนวน @」
 ╠ไวรัส「จำนวน @」รัน คทไวรัส
 ╠ปลิว「@」 คำสั่งเตะ
-╠ส่งแขก「@」คำสั่งเตะ
+╠เงียบ「@」คำสั่งเตะ
 ╠จุก「@」คำสั่งเตะ
 ╠ลองดู「@」คำสั่งเตะ
 ╠ล้อเล่น「@」คำสั่งเตะ
@@ -292,9 +293,9 @@ helpmsg ="""
 ╠ล้างเลืยนแบบ「@」
 ╠เลืยนแบบ เปิด/ปิด
 ╠ยกเลิก 「จำนวน」ยกเลิกข้อความ
-╠═════════════════════
+╠════════════════
 ╠คำสั่งเปิดปิดทั้งหมด:
-╠═════════════════════
+╠════════════════
 ╠เปิดคท/ปิดคท
 ╠เปิดมุดลิ้ง/ปิดมุดลิ้ง
 ╠เปิดเข้า/ปิดเข้า
@@ -311,9 +312,9 @@ helpmsg ="""
 ╠เปิดเตะคนลงติ๊ก/ปิดเตะคนลงติ๊ก
 ╠เปิดแอบ/ปิดแอบ
 ╠เปิดแอบอ่าน/ปิดแอบอ่าน
-╠═════════════════════
+╠════════════════
 ╠คำสั่งค่าทั้งหมด :
-╠═════════════════════
+╠════════════════
 ╠ตั้งอ่าน1「ข้อความที่ต้องการ」
 ╠ตั้งอ่าน2「ข้อความที่ต้องการ」
 ╠ตั้งติ๊กคนแอบ
@@ -332,7 +333,7 @@ helpmsg ="""
 ╠ตั้งติ๊กคนเข้า
 ╠ลบติ๊กคนเข้า
 ╠ตั้งคนเข้า:「ข้อความที่ต้องการ」
-╠═════════════════════ 
+╚════════════════
 """
 helpmusic ="""「 Music 」
 
@@ -416,6 +417,7 @@ def lineBot(op):
             print ("[ 5 ] NOTIFIED ADD CONTACT")
             if settings["autoAdd"] == True:
                 client.findAndAddContactsByMid(op.param1)
+                client.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
             if settings["autoBlock"] == True:
                 client.blockContact(op.param1) 
             msgSticker = settings["messageSticker"]["listSticker"]["addSticker"]
@@ -725,7 +727,7 @@ def lineBot(op):
                         settings["winvite"] = True
                         client.sendMessage(msg.to,"Send Contact to Invite")
 #==============================================================================================================
-                elif "ส่งแขก " in msg.text:
+                elif "เงียบ " in msg.text:
                     if msg._from in clientMID:                                                                                                                                       
                         key = eval(msg.contentMetadata["MENTION"])
                         key["MENTIONEES"][0]["M"]                                                                                                                                
@@ -2087,8 +2089,8 @@ def lineBot(op):
                             client.sendMessage(to, "Succes logout from bots")
                             settings["restartPoint"] = to
                             restartBot()
-                        elif cmd == "คท" or cmd == "tes":
-                            client.sendMentionFooter(to, '「เรา」\n', sender, "https://line.me/ti/p/~yukie2k18", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~guarmselfbot1122', 'type': 'mt', 'subText': "armselfbot", 'a-installUrl': 'https://line.me/ti/p/~guarmselfbot1122', 'a-installUrl': ' https://line.me/ti/p/~guarmselfbot1122', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~guarmselfbot1122', 'i-linkUri': 'https://line.me/ti/p/~guarmselfbot1122', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~guarmselfbot1122'}, contentType=19)
+                        elif cmd == "คท" or cmd == "my":
+                            client.sendMentionFooter(to, '「เรา」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "armselfbot", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                         elif cmd == "yabi":
                             userid = "https://line.me/ti/p/~" + client.profile.userid
                             client.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName)
@@ -2689,7 +2691,7 @@ def lineBot(op):
                                 client.acquireGroupCallRoute(to)
                                 client.inviteIntoGroupCall(to, contactIds=members)
                             else:
-                                client.sendMessage(to, "ก็คนทันเหงาอะ".format(str(jml)))
+                                client.sendMessage(to, "ก็คนมันเหงาอะ".format(str(jml)))
                         elif cmd.startswith("ว่า "):
                             sep = text.split(" ")
                             text = text.replace(sep[0] + " ","")
@@ -2896,7 +2898,7 @@ def lineBot(op):
                                 client.updateGroup(group)
                         elif cmd == ".คท" or cmd == "mycon":
                             try:
-                    	        sendMention(to, sender, "「 ☬ชื่อ เชลบอท☬ 」\n•", "")
+                    	        sendMention(to, sender, "「 ชื่อ เชลบอท 」\n•", "")
                     	        client.sendContact(to, sender)
                             except Exception as error:
                                 client.sendMessage(to, "「 Result Error 」\n" + str(error))                              
@@ -3303,61 +3305,23 @@ def lineBot(op):
                                 client.sendMessage(to,"ข้อความตอนเราของคุณ : " + text_)
                             except:
                                 client.sendMessage(to,"WelcomeMessage\nFailed to replace message")
+
                         elif cmd == "แทค":
-                            if msg.toType == 0:
-                                sendMention(to, to)
-                            elif msg.toType == 2:
-                                group = client.getGroup(to)
-                                contact = [mem.mid for mem in group.members]
-                                ct1, ct2, ct3, ct4, ct5, jml = [], [], [], [], [], len(contact)
-                                if jml <= 100:
-                                    mentionMembers(to, contact)
-                                elif jml > 100 and jml <= 200:
-                                    for a in range(0, 99):
-                                        ct1 += [contact[a]]
-                                    for b in range(100, jml):
-                                        ct2 += [contact[b]]
-                                    mentionMembers(to, ct1)
-                                    mentionMembers(to, ct2)
-                                elif jml > 200 and jml <= 300:
-                                    for a in range(0, 99):
-                                        ct1 += [contact[a]]
-                                    for b in range(100, 199):
-                                        ct2 += [contact[b]]
-                                    for c in range(200, jml):
-                                        ct3 += [contact[c]]
-                                    mentionMembers(to, ct1)
-                                    mentionMembers(to, ct2)
-                                    mentionMembers(to, ct3)
-                                elif jml > 300 and jml <= 400:
-                                    for a in range(0, 99):
-                                        ct1 += [contact[a]]
-                                    for b in range(100, 199):
-                                        ct2 += [contact[b]]
-                                    for c in range(200, 299):
-                                        ct3 += [contact[c]]
-                                    for d in range(300, jml):
-                                        ct4 += [contact[d]]
-                                    mentionMembers(to, ct1)
-                                    mentionMembers(to, ct2)
-                                    mentionMembers(to, ct3)
-                                    mentionMembers(to, ct4)
-                                elif jml > 400 and jml <= 500:
-                                    for a in range(0, 99):
-                                        ct1 += [contact[a]]
-                                    for b in range(100, 199):
-                                        ct2 += [contact[b]]
-                                    for c in range(200, 299):
-                                        ct3 += [contact[c]]
-                                    for d in range(300, 399):
-                                        ct4 += [contact[d]]
-                                    for e in range(400, jml):
-                                        ct4 += [contact[e]]
-                                    mentionMembers(to, ct1)
-                                    mentionMembers(to, ct2)
-                                    mentionMembers(to, ct3)
-                                    mentionMembers(to, ct4)
-                                    mentionMembers(to, ct5)
+                          if wait["selfbot"] == True:
+                            group = client.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            k = len(nama)//20
+                            for a in range(k+1):
+                                txt = u''
+                                s=0
+                                b=[]
+                                for i in group.members[a*20 : (a+1)*20]:
+                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                    s += 7
+                                    txt += u'@Alin \n'
+                                client.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                                client.sendMessage(to, "Hello {} Mention".format(str(len(nama)))) 
+
                         elif cmd == "autoadd":
                             if settings["addPesan"] is not None:
                                 client.sendMessage(to,"Your Autoadd is : " + str(settings["addPesan"]))
@@ -3748,15 +3712,15 @@ def lineBot(op):
                                     for kontak in blockedlist:
                                         client.sendMessage(to, text=None, contentMetadata={'mid': kontak}, contentType=13)
 #==============================================================================================================
-                        elif cmd == "มอง" or cmd == "tagall" or cmd == "desah" or cmd == "jembot":
+                        elif cmd == "มอง" or cmd == "tagall" or cmd == "desah" or cmd == "maxbot":
                             group = client.getGroup(msg.to)
                             nama = [contact.mid for contact in group.members]
-                            k = len(nama)//100
+                            k = len(nama)//20
                             for a in range(k+1):
                                 txt = u''
                                 s=0
                                 b=[]
-                                for i in group.members[a*100 : (a+1)*100]:
+                                for i in group.members[a*20 : (a+1)*20]:
                                     b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                                     s += 7
                                     txt += u'@RhyN_\n'
@@ -4201,8 +4165,8 @@ def lineBot(op):
                         elif cmd == "ข้อมูล" or cmd == "about":
                             try:
                                 arr = []
-                                owner = "ue4341206714a63166f6540501005a5d9"
-                                khietag = "ue4341206714a63166f6540501005a5d9"                        
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
+                                khietag = "u4862fe4b182b2fd194a3108e2f3662e8"                        
              #                   creator = client.getContact(owner)
                                 contact = client.getContact(clientMID)
                                 grouplist = client.getGroupIdsJoined()
@@ -4210,13 +4174,13 @@ def lineBot(op):
                                 favoritelist = client.getFavoriteMids()
                                 blockedlist = client.getBlockedContactIds()
                                 ret_ = "「ข้อมูล」\n"
-                                ret_ += "\n👑 ชื่อเรา ➣ {}".format(contact.displayName)
-                                ret_ += "\n👑 กลุ่มที่อยู่ ➣ {}".format(str(len(grouplist)))
-                                ret_ += "\n👑 เพื่อน ➣ {}".format(str(len(contactlist)))
-                                ret_ += "\n👑 Favorites ➣ {}".format(str(len(favoritelist)))
-                                ret_ += "\n👑 บล็อค ➣ {}".format(str(len(blockedlist)))
-                                ret_ += "\n👑 Bot Version ➣ V.03"
-                                ret_ += "\n👑 คนสร้าง ➣ @!              " #.format(creator.displayName)
+                                ret_ += "\n😈 ชื่อเรา ➣ {}".format(contact.displayName)
+                                ret_ += "\n😈 กลุ่มที่อยู่ ➣ {}".format(str(len(grouplist)))
+                                ret_ += "\n😈 เพื่อน ➣ {}".format(str(len(contactlist)))
+                                ret_ += "\n😈 Favorites ➣ {}".format(str(len(favoritelist)))
+                                ret_ += "\n😈 บล็อค ➣ {}".format(str(len(blockedlist)))
+                                ret_ += "\n😈 Bot Version ➣ V.03"
+                                ret_ += "\n😈 คนสร้าง ➣ @!              " #.format(creator.displayName)
    #                             client.sendMessage(to, str(ret_))
                                 khieMention(to, str(ret_),[khietag])
                             except Exception as error:
@@ -4693,7 +4657,7 @@ def lineBot(op):
                                     client.sendMessage(to, "Porn Not Found !")
                         elif cmd == "ข่าว":
                              try:
-                                 api_key = "ue4117356009586eb55366d1199e56589"
+                                 api_key = "u4862fe4b182b2fd194a3108e2f3662e8"
                                  r = _session.get("https://newsapi.org/v2/top-headlines?country=id&apiKey={}".format(str(api_key)))
                                  data = r.text
                                  data = json.loads(data)
@@ -5040,7 +5004,7 @@ def lineBot(op):
                         if settings["autoRead"] == True:
                             client.sendChatChecked(to, msg_id)
                 #if msg.text in ["เซลใคร"]:
-                 #   client.sendText(msg.to,"😉😉เชลของ😉😉\n👑ŤỂÄΜ ж βǾŦ👑฿Ǿ¥👑")                
+                 #   client.sendText(msg.to,"😉😉เชลของ😉😉\n™ധู้ざຣ้ণს✚ປิʨℓℓҨබମ™")                
 #==============================================================================================================
 #=====================================================[]=======================================================
 #==============================================================================================================
@@ -5216,7 +5180,7 @@ def cium(to, nama):
     strt = int(0)
     akh = int(0)
     nm = nama
-    myid = "ue4117356009586eb55366d1199e56589"
+    myid = "u4862fe4b182b2fd194a3108e2f3662e8"
     if myid in nm:    
       nm.remove(myid)
     #print nm
