@@ -43,7 +43,7 @@ backup = client.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
-squareChatMid='ue4117356009586eb55366d1199e56589'
+squareChatMid='u4862fe4b182b2fd194a3108e2f3662e8'
 #helpMute = """Switched to normal mode"""
 #helpUnmute = """I'll be here when you need me"""
 #==============================================================================================================
