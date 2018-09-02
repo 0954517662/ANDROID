@@ -12,8 +12,8 @@
         "members": 3,
         "on": true
     },
-    "autoJoin": false,
-    "autoJoinTicket": false,
+    "autoJoin": true,
+    "autoJoinTicket": true,
     "autoLeave": false,
     "autoRead": false,
     "autoReply": false,
@@ -24,19 +24,19 @@
     "changeProfileVideo": {
         "picture": "tmp/pict.bin",
         "stage": 2,
-        "status": true,
+        "status": false,
         "video": "/tmp/linepy-1528384030-7.bin"
     },
     "changeVideo": false,
-    "chatMessage": "dih",
+    "chatMessage": "™ധู้ざຣ้ণს✚ປิʨℓℓҨබମ™",
     "checkContact": false,
     "checkSticker": false,
     "dblacklist": false,
-    "detectMention": false,
-    "detectMentionPM": false,
+    "detectMention": true,
+    "detectMentionPM": true,
     "dwhitelist": false,
     "getReader": {
-        "c42edf50a648e40727e426b81a9a83acf": []
+        "ca1f5f9361386320256158f49bda4bb7e": []
     },
     "keyCommand": "",
     "leaveMessage": false,
@@ -90,13 +90,13 @@
     "responGc": true,
     "responcall": false,
     "responcallgc": false,
-    "responpm": false,
+    "responpm": true,
     "restartBot": null,
-    "restartPoint": "c0c00788ee26afa13767d60429c542826",
+    "restartPoint": "ca1f5f9361386320256158f49bda4bb7e",
     "server": "VPS",
     "sticker": false,
     "timeRestart": "18000",
-    "unsendMessage": false,
+    "unsendMessage": true,
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -119,10 +119,10 @@
         "Mozilla/5.0 (Windows NT 5.0; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (Windows NT 5.0; rv:5.0) Gecko/20100101 Firefox/5.0"
     ],
-    "userMentioned": false,
+    "userMentioned": true,
     "wblacklist": false,
-    "welcomeMessage": false,
-    "welcomePesan": " \n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n 􀄃􀇡moon attracted􏿿ꜱᴇʟᴀᴍᴀᴛ ᴅᴀᴛᴀɴɢ ʙᴜᴀᴛ ᴋᴀᴍᴜ􀄃􀇡moon attracted􏿿\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ˢᵉˡᵃᵐᵃᵗ ᵈᵃᵗᵃⁿᵍ ᵃᵏᵃⁿ ᵈⁱᵃᵏʰⁱʳⁱ ˢᵉˡᵃᵐᵃᵗ ᵗⁱⁿᵍᵍᵃˡ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ᵏᵃᵐᵘ ᵇⁱˢᵃ ᵐᵉᵐⁱˡⁱᵏⁱ ᵃᵖᵃᵖᵘⁿ ʸᵍ ᵈⁱⁱⁿᵍⁱⁿᵏᵃⁿ ʲⁱᵏᵃ ᵏᵃᵐᵘ ᵐᵃᵐᵖᵘ ᵐᵉⁿᵍʰⁱˡᵃⁿᵍᵏᵃⁿ ˢᵘᵃᵗᵘ ᵏᵉʸᵃᵏⁱⁿᵃⁿ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ʙᴀʜᴡᴀ ᴛᴀᴋ ᴍᴜɴɢᴋɪɴ ᴍᴇɴᴅᴘᴀᴛᴋᴀɴʏᴀ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ʷᵃʰᵃⁱ ʸᵍ ᵐᵃʰᵃ ᴸᴱᴹᴮᵁᵀ ᵐᵃⁿʲᵃᵏᵃⁿˡᵃʰ ʰᵃᵗⁱᵏᵘ\n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+    "welcomeMessage": true,
+    "welcomePesan": " \n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n 􀄃􀇡moon attracted􏿿【さัএπัஞ✵ບิथℓℓҨतΩ】􀄃􀇡moon attracted􏿿\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ˢᵉˡᵃᵐᵃᵗ ᵈᵃᵗᵃⁿᵍ ᵃᵏᵃⁿ ᵈⁱᵃᵏʰⁱʳⁱ ˢᵉˡᵃᵐᵃᵗ ᵗⁱⁿᵍᵍᵃˡ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ᵏᵃᵐᵘ ᵇⁱˢᵃ ᵐᵉᵐⁱˡⁱᵏⁱ ᵃᵖᵃᵖᵘⁿ ʸᵍ ᵈⁱⁱⁿᵍⁱⁿᵏᵃⁿ ʲⁱᵏᵃ ᵏᵃᵐᵘ ᵐᵃᵐᵖᵘ ᵐᵉⁿᵍʰⁱˡᵃⁿᵍᵏᵃⁿ ˢᵘᵃᵗᵘ ᵏᵉʸᵃᵏⁱⁿᵃⁿ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗\n ʙᴀʜᴡᴀ ᴛᴀᴋ ᴍᴜɴɢᴋɪɴ ᴍᴇɴᴅᴘᴀᴛᴋᴀɴʏᴀ\n ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝\n ʷᵃʰᵃⁱ ʸᵍ ᵐᵃʰᵃ ᴸᴱᴹᴮᵁᵀ ᵐᵃⁿʲᵃᵏᵃⁿˡᵃʰ ʰᵃᵗⁱᵏᵘ\n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
     "whitelist": {},
     "wlc": false,
     "wwhitelist": false
