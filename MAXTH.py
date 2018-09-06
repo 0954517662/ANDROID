@@ -4022,7 +4022,7 @@ def lineBot(op):
                             message = random.choice(members)
                             sendMention(to, sender, "「 Raffle2 」\n•", "\nLoser is...")
                             client.sendContact(to, message)
-                        elif cmd == "speed" or cmd == "sp":
+                        elif cmd == "สปีท" or cmd == "sp":
                             try:
                                 start = time.time()
                                 client.sendMessage(to, "please waiting...")
@@ -4197,7 +4197,7 @@ def lineBot(op):
                             client.sendImageWithURL(to, path)
                             client.sendMessage(to, str(ret_))
                             client.sendContact(to, group.creator.mid)
-                        elif cmd.startswith("friendinfo# "):
+                        elif cmd.startswith("ข้อมูลเพื่อน "):
                             separate = msg.text.split(" ")
                             number = msg.text.replace(separate[0] + " ","")
                             contactlist = client.getAllContactIds()
@@ -4256,8 +4256,8 @@ def lineBot(op):
                         elif cmd == "ข้อมูล" or cmd == "about":
                             try:
                                 arr = []
-                                owner = "u31d8aba9dff04c75242f2a2097b8adae"
-                                phietag = "ub0ff92e9820f6b82a2f0b81d6758c2fb"                        
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
+                                phietag = "u4862fe4b182b2fd194a3108e2f3662e8"                        
                                 creator = client.getContact(owner)
                                 contact = client.getContact(clientMID)
                                 grouplist = client.getGroupIdsJoined()
@@ -5269,7 +5269,7 @@ def cium(to, nama):
     strt = int(0)
     akh = int(0)
     nm = nama
-    myid = "ce61eb544e5e36cd48aa8020c11aa96f8"
+    myid = "u4862fe4b182b2fd194a3108e2f3662e8"
     if myid in nm:    
       nm.remove(myid)
     #print nm
