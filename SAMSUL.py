@@ -3393,26 +3393,7 @@ def lineBot(op):
                                     mentionMembers(to, ct3)
                                     mentionMembers(to, ct4)
                                     mentionMembers(to, ct5)
-			elif cmd == "kamu":
-                            #if user in RfuSekawan or user in Squad["Admin"]:
-                                gname = client.getGroup(kirim)
-                                local = [contact.mid for contact in gname.members]
-                                try:
-                                    lur = len(local)//20
-                                    for fu in range(lur+1):
-                                        hdc = u''
-                                        sell=0
-                                        com=[]
-                                        for rid in gname.members[fu*20 : (fu+1)*20]:
-                                            com.append({"S":str(sell), "E" :str(sell+6), "M":rid.mid})
-                                            sell += 7
-                                            hdc += u'@PH-13\n'
-                                            atas = '\n ᴅɪ ɢʀᴏᴜᴘ {} '.format(str(gname.name))
-                                            atas += '\n ᴛᴇʀɪᴅᴇɴᴛɪꜰɪᴋᴀꜱɪ {} ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ'.format(str(len(local)))
-                                        client.sendMessage(kirim, text=hdc + str(atas), contentMetadata={u'MENTION': json.dumps({'MENTIONEES':com})}, contentType=0)
-                                except Exception as error:
-                                    client.sendMessage(kirim, str(error))
-                        elif cmd == "autoadd":
+			elif cmd == "autoadd":
                             if settings["addPesan"] is not None:
                                 client.sendMessage(to,"Your Autoadd is : " + str(settings["addPesan"]))
                                 msgSticker = settings["messageSticker"]["listSticker"]["addSticker"]
