@@ -1,4 +1,3 @@
-# ????M ? MI??I????
 # -*- coding: utf-8 -*-
 from Linephu.linepy import *
 from Linephu.akad.ttypes import Message
@@ -16,7 +15,7 @@ from googletrans import Translator
 #==============================================================================================================
 botStart = time.time()
 #==============================================================================================================
-client = LINE ("EwuDzAX1HOChhzFJMivb.Sp/s6yipA4kI8lGDz1Jc/W./IDEYRL3fL3zmq9ikK8ECpVJH4UzuQa9BsSXAgUOX+U=")
+client = LINE ()
 #client = LINE ("EwcQCTXIPLsANsbimgib.Sp/s6yipA4kI8lGDz1Jc/W.WBwQU7uzoEjoERpm4HeW/4vtWuHeGvGt7lNGir3ElX0=")
 #==============================================================================================================
 readOpen = codecs.open("read.json","r","utf-8")
@@ -34,9 +33,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "u31d8aba9dff04c75242f2a2097b8adae"
-owner = "u31d8aba9dff04c75242f2a2097b8adae"
-Bots=[mid,"u31d8aba9dff04c75242f2a2097b8adae"]
+admin = "ub8fd0c502d6d52c35d8bc6fcced407d0"
+owner = "ub8fd0c502d6d52c35d8bc6fcced407d0"
+Bots=[mid,"ub8fd0c502d6d52c35d8bc6fcced407d0"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
